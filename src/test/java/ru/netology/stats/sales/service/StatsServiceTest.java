@@ -6,57 +6,57 @@ import org.junit.jupiter.api.Test;
 public class StatsServiceTest {
 
     @Test
-    public void SalesAmount() {
+    public void salesAmount() {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedSum = 180;
-        int actualSum = service.SalesAmount(sales);
+        int actualSum = service.salesAmount(sales);
         Assertions.assertEquals(expectedSum, actualSum);
     }
 
     @Test
-    public void MonthlyAmount() {
+    public void monthlyAmount() {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedSum = 15;
-        int actualSum = service.MonthlyAmount(sales);
+        int actualSum = service.monthlyAmount(sales);
         Assertions.assertEquals(expectedSum, actualSum);
     }
 
     @Test
-    public void MaxSales() {
+    public void maxSales() {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedMonths = 8;
-        int actualMonths = service.MaxSales(sales);
+        int actualMonths = service.maxSales(sales);
         Assertions.assertEquals(expectedMonths, actualMonths);
     }
 
     @Test
-    public void MinSales() {
+    public void minSales() {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedMonths = 9;
-        int actualMonths = service.MinSales(sales);
+        int actualMonths = service.minSales(sales);
         Assertions.assertEquals(expectedMonths, actualMonths);
     }
 
     @Test
-    public void BelowAverage() {
+    public void belowAverage() {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedMonths = 5;
-        int actualMonths = service.BelowAverage(sales);
+        int actualMonths = service.belowAverage(sales);
 
         Assertions.assertEquals(expectedMonths, actualMonths);
     }
 
     @Test
-    public void AboveAverage() {
+    public void aboveAverage() {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedMonths = 5;
-        int actualMonths = service.AboveAverage(sales);
+        int actualMonths = service.aboveAverage(sales);
 
         Assertions.assertEquals(expectedMonths, actualMonths);
     }
